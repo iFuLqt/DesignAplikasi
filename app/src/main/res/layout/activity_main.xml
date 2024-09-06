@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E4E4E4"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/bar"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:text="Cari Peliharaan?"
+        android:backgroundTint="@color/white"/>
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <ImageButton
+        android:id="@+id/keranjang"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/bar"
+        android:layout_marginStart="-5dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/keranjang" />
+
+    <ImageButton
+        android:id="@+id/chat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/keranjang"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/chat" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvmenu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/vf"
+        android:backgroundTint="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="fill"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/hewan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hewan"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/cv1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/aksesoris" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aksesoris"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/cv2"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/makanan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makanan"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cv1"
+                android:layout_gravity="fill"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/grooming" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grooming"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cv1"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/cv1"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/penitipan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penitipan"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv6"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_below="@+id/cv1"
+                android:layout_gravity="fill"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/cv2"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/konsultasi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kosultasi"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvqris"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:backgroundTint="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white">
+
+            <ImageButton
+                android:id="@+id/sc1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan" />
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/sc1"
+                android:layout_marginStart="-6dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vertical" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvsaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/line1"
+                android:layout_marginStart="-6dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:id="@+id/petpay"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/pay" />
+
+                    <TextView
+                        android:id="@+id/saldo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_toRightOf="@+id/petpay"
+                        android:text="Rp. 334.764"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/isi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/petpay"
+                        android:text="Isi Saldo"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/cvsaldo"
+                android:layout_marginStart="-6dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vertical" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/line2"
+                android:layout_marginStart="-6dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:id="@+id/petcoin"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/pay" />
+
+                    <TextView
+                        android:id="@+id/coin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_toRightOf="@+id/petcoin"
+                        android:text="10"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/coinbawah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/petcoin"
+                        android:text="Gratis Coin"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/cvcoin"
+                android:layout_marginStart="-6dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vertical" />
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvtransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/line3"
+                android:layout_marginStart="-6dp"
+                android:backgroundTint="@color/white"
+                app:cardElevation="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white">
+                    <ImageView
+                        android:id="@+id/transfersaldo"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@drawable/pay" />
+
+                    <TextView
+                        android:id="@+id/transfer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_toRightOf="@+id/transfersaldo"
+                        android:text="Transfer"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/gratis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/transfersaldo"
+                        android:text="Gratis"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cvjualan"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_below="@id/cvmenu"
+    android:layout_marginTop="15dp"
+    android:backgroundTint="@color/white">
+    <TextView
+        android:id="@+id/rekom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rekomendasi"
+        android:paddingLeft="20dp"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:textColor="#FF9800"
+        android:textStyle="bold|normal"/>
+    <HorizontalScrollView
+        android:id="@+id/hsview"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="0dp"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                app:cardElevation="5dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib1"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/hewan3"/>
+
+                    <TextView
+                        android:id="@+id/judul1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Anjing Sok Imut"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star1"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib2"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/makan1"/>
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Snack Anjing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star2"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib3"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju3"/>
+
+                    <TextView
+                        android:id="@+id/judul3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Baju Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star3"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                app:cardElevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib4"
+                        android:layout_width="150dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/kamar2"/>
+
+                    <TextView
+                        android:id="@+id/judul4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Penitipan Handil"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star4"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star4"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga4"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/cvjualan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:background="@drawable/gambar2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Emang Boleh Secantik Ini?"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Buruan beli burung dan menangkan lomba burung berhadiah ratusan juta rupiah"
+                android:textColor="#3C3C3C"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</ScrollView>

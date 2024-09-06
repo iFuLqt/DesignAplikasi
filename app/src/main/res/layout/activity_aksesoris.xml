@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".aksesoris"
+    android:background="#F6F5F5">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDDC39"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <com.google.android.material.search.SearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Cari Aksesoris?"
+        android:background="#F8F3F3"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F5F5">
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv1"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib1"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju1"/>
+
+                    <TextView
+                        android:id="@+id/judul1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Baju Anjing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star1"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_toEndOf="@id/cv1"
+                android:layout_marginStart="12dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib2"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju2"/>
+
+                    <TextView
+                        android:id="@+id/judul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Dispenser Anjing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star2"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga2"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv3"
+                android:layout_below="@+id/cv1"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib3"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju3"/>
+
+                    <TextView
+                        android:id="@+id/judul3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Baju Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star3"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga3"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv4"
+                android:layout_toEndOf="@+id/cv1"
+                android:layout_below="@+id/cv1"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib4"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju4"/>
+
+                    <TextView
+                        android:id="@+id/judul4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Gelang Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star4"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star4"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga4"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv5"
+                android:layout_below="@+id/cv3"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib5"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju5"/>
+
+                    <TextView
+                        android:id="@+id/judul5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Badut Anjing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star5"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star5"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga5"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv6"
+                android:layout_below="@+id/cv3"
+                android:layout_toEndOf="@+id/cv5"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib6"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju6"/>
+
+                    <TextView
+                        android:id="@+id/judul6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Kacamata Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star6"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star6"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga6"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv7"
+                android:layout_below="@+id/cv5"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib7"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju4"/>
+
+                    <TextView
+                        android:id="@+id/judul7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Gelang Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star7"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star7"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga7"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv8"
+                android:layout_below="@+id/cv5"
+                android:layout_toEndOf="@+id/cv7"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="165dp"
+                android:layout_height="210dp"
+                app:cardElevation="2dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ib8"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center|top"
+                        android:background="@drawable/baju8"/>
+
+                    <TextView
+                        android:id="@+id/judul8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="left"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Baju Kucing"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp">
+
+                        <ImageView
+                            android:id="@+id/star8"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:background="@drawable/star"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginStart="5dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:layout_toRightOf="@+id/star8"
+                            android:text="4.6" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="5dp">
+
+                        <TextView
+                            android:id="@+id/harga8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="#FF9800"
+                            android:text="Rp. 200.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/harga8"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="15dp"
+                            android:layout_centerVertical="true"
+                            android:textSize="10sp"
+                            android:text="15 terjual"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
